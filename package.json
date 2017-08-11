@@ -1,7 +1,7 @@
 {
   "name": "gql-mock-server",
   "description": "GraphQL server based on graphql-server-express, preconfigured with cors to use as a mock server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "license": "MIT",
   "repository": {
