@@ -22,9 +22,9 @@ const resolvers = {
   Query: {
     users: () => [{ id: "1", name: "Peter" }, { id: "2", name: "Frank" }]
   }
-}
+};
 
-gql({ types, resolvers })
+gql({ schema: { types, resolvers } });
 ```
 
 ## API
