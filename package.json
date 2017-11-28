@@ -17,9 +17,9 @@
     "body-parser": "^1.17.2",
     "cors": "^2.8.3",
     "express": "^4.15.3",
-    "graphql": "^0.10.3",
+    "graphql": "^0.11.7",
     "graphql-server-express": "^1.0.0",
-    "graphql-tools": "^1.1.0",
+    "graphql-tools": "^2.9.0",
     "nodemon": "^1.11.0"
   },
   "scripts": {
