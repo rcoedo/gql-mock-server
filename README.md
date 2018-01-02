@@ -24,7 +24,7 @@ const resolvers = {
   }
 };
 
-gql({ schema: { types, resolvers } });
+gql({ types, resolvers });
 ```
 
 ## API
@@ -32,10 +32,12 @@ gql({ schema: { types, resolvers } });
 The gql function accepts the following arguments:
 
 ```
-gql({
+gql(
   schema, // schema object: { types, resolvers }
-  context, // context builder: request => ({})
-  port, // server port: 3002
-  endpoint, // endpoint for the gql server: "/graphql"
-})
+  {
+    context, // context builder: request => ({})
+    port, // server port: 3002
+    endpoint, // endpoint for the gql server: "/graphql"
+  }
+)
 ```

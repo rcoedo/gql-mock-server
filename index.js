@@ -4,7 +4,7 @@ import { makeExecutableSchema } from "graphql-tools";
 import bodyParser from "body-parser";
 import cors from "cors";
 
-const server = ({ schema: { types: typeDefs, resolvers }, context = req => ({}), port = 3002, endpoint = "/graphql" }) => {
+const server = ({ types: typeDefs, resolvers }, { context = req => ({}), port = 3002, endpoint = "/graphql" } = {}) => {
   const app = express();
 
   app.use(cors({ origin: (_origin, cb) => cb(null, true), credentials: true }));
