@@ -1,6 +1,6 @@
 # gql-mock-server
 
-GraphQL server based on graphql-server-express, preconfigured with cors to be used as a mock server. You can find more info in [this medium post](https://medium.com/trabe/mocking-your-graphql-server-is-easier-with-gql-mock-server-9d72ce07a657)
+GraphQL server based on graphql-server-express, preconfigured with cors to be used as a mock server. You can find more info in [this medium post](https://medium.com/trabe/mocking-your-graphql-server-is-easier-with-gql-mock-server-9d72ce07a657).
 
 ## How to use
 
