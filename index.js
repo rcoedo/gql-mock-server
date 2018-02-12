@@ -15,6 +15,13 @@ const server = ({ types: typeDefs, resolvers }, { context = req => ({}), port = 
   );
 
   const server = app.listen(port, () => console.log(`Running on http://localhost:${server.address().port}${endpoint}`));
+
+  return server;
 };
+
+export function stop(app, done = () => {}) {
+  app.close();
+  done();
+}
 
 export default server;
