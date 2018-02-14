@@ -14,7 +14,7 @@ const server = ({ types: typeDefs, resolvers }, { context = req => ({}), port = 
     graphqlExpress(req => ({ schema: makeExecutableSchema({ typeDefs, resolvers }), context: context(req) })),
   );
 
-  return app.listen(port, () => console.log(`Running on http://localhost:${server.address().port}${endpoint}`));
+  return app.listen(port, () => console.log(`Running on http://localhost:${port}${endpoint}`));
 };
 
 export default server;
