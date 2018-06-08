@@ -4,7 +4,7 @@ GraphQL server based on graphql-server-express, preconfigured with cors to be us
 
 ## How to use
 
-```
+``` javascript
 import gql from "gql-mock-server";
 
 const types = `
@@ -31,13 +31,14 @@ gql({ types, resolvers });
 
 The gql function accepts the following arguments:
 
-```
+```javascript
 gql(
   schema, // schema object: { types, resolvers }
   {
     context, // context builder: request => ({})
     port, // server port: 3002
     endpoint, // endpoint for the gql server: "/graphql"
+    verbose // default is true, if false is passed, will not console.log on start
   }
 )
 ```
