@@ -4,7 +4,7 @@ import { makeExecutableSchema } from "graphql-tools";
 import bodyParser from "body-parser";
 import cors from "cors";
 
-const server = ({ types: typeDefs, resolvers }, { context = req => ({}), port = 3002, endpoint = "/graphql" } = {}) => {
+const server = ({ types: typeDefs, resolvers }, { context = req => ({}), port = 3002, endpoint = "/graphql", verbose = true } = {}) => {
   const app = express();
 
   app.use(cors({ origin: (_origin, cb) => cb(null, true), credentials: true }));
@@ -14,7 +14,7 @@ const server = ({ types: typeDefs, resolvers }, { context = req => ({}), port = 
     graphqlExpress(req => ({ schema: makeExecutableSchema({ typeDefs, resolvers }), context: context(req) })),
   );
 
-  return app.listen(port, () => console.log(`Running on http://localhost:${port}${endpoint}`));
+  return app.listen(port, () => verbose && console.log(`Running on http://localhost:${port}${endpoint}`));
 };
 
 export default server;
