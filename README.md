@@ -1,5 +1,7 @@
 # gql-mock-server
 
+## This package is not maintained anymore. I would recommend you to use [apollo-server](https://github.com/apollographql/apollo-server) instead.
+
 GraphQL server based on graphql-server-express, preconfigured with cors to be used as a mock server. You can find more info in [this medium post](https://medium.com/trabe/mocking-your-graphql-server-is-easier-with-gql-mock-server-9d72ce07a657).
 
 ## How to use
